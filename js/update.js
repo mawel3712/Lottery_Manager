@@ -108,12 +108,14 @@ var objectArray;
 // }
 
 
-
+for(var index= 0;index<=arrayPos1.length;index++){ 
 //Function Repeated_Numbers to find more commun number in designate place
- arrayPos1counter[1] = jQuery.grep(arrayPos1, function(numbers, index){
-	return ( numbers == compareArray[1]);
+ arrayPos1counter[index] = jQuery.grep(arrayPos1, function(numbers, i){
+	return ( numbers == compareArray[index]);
 });	
-console.log("arrayPos1counter[1]: " +arrayPos1counter[1].length);
+
+console.log("arrayPos1counter"+"["+index+"]"+": " +arrayPos1counter[index].length);
+}
 
 
 
@@ -121,8 +123,7 @@ console.log("arrayPos1counter[1]: " +arrayPos1counter[1].length);
 
 
 
-
-//Function Repeated_Numbers to find more commun number in designate place
+//Function Repeated_Numbers to find more commun number in designate index
 var compare_25 = jQuery.grep(arrayPos1, function(numbers, index){
 	return ( numbers == compareArray[25]);
 });	
